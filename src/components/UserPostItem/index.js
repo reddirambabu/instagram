@@ -40,31 +40,31 @@ const UserPostItem = props => {
       <img src={eachPost.postImage} alt="post" className="postImage" />
       <div className="social_div">
         {isLiked ? (
-          <p
+          <button
             onClick={postUnLikeApi}
             testid="unLikeIcon"
             type="button"
             className="icon_button"
           >
             <FcLike className="likeIcon" />
-          </p>
+          </button>
         ) : (
-          <p
+          <button
             onClick={postLikeApi}
             testid="likeIcon"
             type="button"
             className="icon_button"
           >
             <BsHeart className="icon" />
-          </p>
+          </button>
         )}
 
-        <p testid="commentIcon" type="button" className="icon_button">
+        <button testid="commentIcon" type="button" className="icon_button">
           <FaRegComment className="icon" />
-        </p>
-        <p testid="shareIcon" type="button" className="icon_button">
+        </button>
+        <button testid="shareIcon" type="button" className="icon_button">
           <BiShareAlt className="icon" />
-        </p>
+        </button>
       </div>
       <p className="likes">{likesCount} likes</p>
       <p className="caption">{eachPost.postCaption}</p>

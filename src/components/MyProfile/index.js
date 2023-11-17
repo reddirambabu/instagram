@@ -62,7 +62,7 @@ class MyProfile extends Component {
     const {
       followersCount,
       followingCount,
-
+      id,
       userBio,
       userId,
       userName,

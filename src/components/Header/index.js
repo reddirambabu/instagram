@@ -122,14 +122,14 @@ const Header = props => {
                     type="search"
                     placeholder="Search Caption"
                   />
-                  <p
+                  <button
                     onClick={getUserSearchPosts}
                     className="searchButton"
                     type="button"
                     testid="searchIcon"
                   >
                     <FaSearch className="searchIcon" />
-                  </p>
+                  </button>
                 </div>
                 <ul className="nav_bar">
                   <Link to="/" className="nav_item">
@@ -160,14 +160,14 @@ const Header = props => {
                   </Link>
                   <h1 className="title_heading">Insta Share</h1>
                 </div>
-                <p
+                <button
                   onClick={() => setHamburgerButton(!isOpen)}
                   testid="hamburgerIcon"
                   className="hamburgerButton"
                   type="button"
                 >
                   <GiHamburgerMenu className="hamburgerIcon" />
-                </p>
+                </button>
               </div>
               {isOpen && (
                 <div className="links_div">
@@ -187,13 +187,13 @@ const Header = props => {
                   >
                     Logout
                   </button>
-                  <p
+                  <button
                     onClick={() => setHamburgerButton(!isOpen)}
                     type="button"
                     className="hamburgerButton"
                   >
                     <IoCloseCircle className="hamburgerIcon" />
-                  </p>
+                  </button>
                 </div>
               )}
               {searchBarVisible && (
@@ -205,14 +205,14 @@ const Header = props => {
                     type="search"
                     placeholder="Search Caption"
                   />
-                  <p
+                  <button
                     onClick={getUserSearchPosts}
                     className="searchButton"
                     type="button"
                     testid="searchIcon"
                   >
                     <FaSearch className="searchIcon" />
-                  </p>
+                  </button>
                 </div>
               )}
             </div>
